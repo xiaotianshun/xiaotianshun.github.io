@@ -226,6 +226,12 @@
             <!-- SEO header -->
             <h1 style="display: none">计算机网络</h1>
             
+              <p class="note note-info">
+                
+                  本文最后更新于：2 小时前
+                
+              </p>
+            
             <div class="markdown-body">
               <h2 id="为什么TCP是三次握手而不是两次或者四次"><a href="#为什么TCP是三次握手而不是两次或者四次" class="headerlink" title="为什么TCP是三次握手而不是两次或者四次"></a>为什么TCP是三次握手而不是两次或者四次</h2><h3 id="一、资源浪费观点"><a href="#一、资源浪费观点" class="headerlink" title="一、资源浪费观点"></a>一、资源浪费观点</h3><p>如果只有两次握手，当客户端的SYN请求连接在网络管道中阻塞，客户端没有接收到ACK报文，就会重新发送SYN，由于没有第三次握手，服务器不清楚客户端是否收到了自己发送的建立连接的ACK确认信号，所以每收到一个SYN就只能主动建立一个连接，这会造成什么情况呢？如果客户端的SYN阻塞了，重复发送多次SYN报文，那么服务器在收到请求后就会建立多个冗余的无效链接，造成不必要的资源浪费。<br>即两次握手会造成消息滞留情况下，服务器重复接受无用的连接请求SYN报文，而造成重复分配资源。</p>
 <h3 id="二、可靠性论断"><a href="#二、可靠性论断" class="headerlink" title="二、可靠性论断"></a>二、可靠性论断</h3><p>另外一种是 如果想确定双通道通畅，必须使用三个包的发送接收，也就是三次握手：“这个问题的本质是, 信道不可靠, 但是通信双发需要就某个问题达成一致. 而要解决这个问题, 无论你在消息中包含什么信息, 三次通信是理论上的最小值. 所以三次握手不是TCP本身的要求, 而是为了满足”在不可靠信道上可靠地传输信息”这一需求所导致的. 请注意这里的本质需求,信道不可靠, 数据传输要可靠. 三次达到了, 那后面你想接着握手也好, 发数据也好, 跟进行可靠信息传输的需求就没关系了. 因此,如果信道是可靠的, 即无论什么时候发出消息, 对方一定能收到, 或者你不关心是否要保证对方收到你的消息, 那就能像UDP那样直接发送消息就可以了.”<br>三次是保证双方互相明确对方能收能发的最低值。理论上讲不论握手多少次都不能确认一条信道是“可靠”的，但通过3次握手可以至少确认它是“可用”的，再往上加握手次数不过是提高“它是可用的”这个结论的可信程度。另外Tcp的可靠传输更多的是靠重传机制来保证的</p>
@@ -443,6 +449,39 @@
               
             </div>
 
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'xiaotianshun/commit-utterance');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
             
           </article>
         </div>
