@@ -1,0 +1,551 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
+  <link rel="icon" type="image/png" href="/img/hdImg_5916cea1785650feed3e662d406a6e2915855610263.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>操作系统 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 60vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>echo...</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="操作系统">
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="page-content">
+  <h2 id="线程和进程的区别是什么？"><a href="#线程和进程的区别是什么？" class="headerlink" title="线程和进程的区别是什么？"></a>线程和进程的区别是什么？</h2><p>看了一遍排在前面的答案，类似”<strong>进程是资源分配的最小单位，线程是CPU调度的最小单位“</strong>这样的回答感觉太抽象，都不太容易让人理解。</p>
+<p>做个简单的比喻：进程=火车，线程=车厢</p>
+<ul>
+<li>线程在进程下行进（单纯的车厢无法运行）</li>
+<li>一个进程可以包含多个线程（一辆火车可以有多个车厢）</li>
+<li>不同进程间数据很难共享（一辆火车上的乘客很难换到另外一辆火车，比如站点换乘）</li>
+<li>同一进程下不同线程间数据很易共享（A车厢换到B车厢很容易）</li>
+<li>进程要比线程消耗更多的计算机资源（采用多列火车相比多个车厢更耗资源）</li>
+<li>进程间不会相互影响，一个线程挂掉将导致整个进程挂掉（一列火车不会影响到另外一列火车，但是如果一列火车上中间的一节车厢着火了，将影响到所有车厢）</li>
+<li>进程可以拓展到多机，进程最多适合多核（不同火车可以开在多个轨道上，同一火车的车厢不能在行进的不同的轨道上）</li>
+<li>进程使用的内存地址可以上锁，即一个线程使用某些共享内存时，其他线程必须等它结束，才能使用这一块内存。（比如火车上的洗手间）－”互斥锁”</li>
+<li>进程使用的内存地址可以限定使用量（比如火车上的餐厅，最多只允许多少人进入，如果满了需要在门口等，等有人出来了才能进去）－“信号量”</li>
+</ul>
+<h2 id="os-signal-信号"><a href="#os-signal-信号" class="headerlink" title="os/signal - 信号"></a>os/signal - 信号</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>信号是事件发生时对进程的通知机制。有时也称之为软件中断。信号与硬件中断的相似之处在于打断了程序执行的正常流程，大多数情况下，无法预测信号到达的精确时间。</p>
+<p>因为一个具有合适权限的进程可以向另一个进程发送信号，这可以称为进程间的一种同步技术。当然，进程也可以向自身发送信号。然而，发往进程的诸多信号，通常都是源于内核。引发内核为进程产生信号的各类事件如下。</p>
+<ul>
+<li>硬件发生异常，即硬件检测到一个错误条件并通知内核，随即再由内核发送相应信号给相关进程。比如执行一条异常的机器语言指令（除 0，引用无法访问的内存区域）。</li>
+<li>用户键入了能够产生信号的终端特殊字符。如中断字符（通常是 Control-C）、暂停字符（通常是 Control-Z）。</li>
+<li>发生了软件事件。如调整了终端窗口大小，定时器到期等。</li>
+</ul>
+<p>针对每个信号，都定义了一个唯一的（小）整数，从 1 开始顺序展开。系统会用相应常量表示。Linux 中，1-31 为标准信号；32-64 为实时信号（通过 <code>kill -l</code> 可以查看）。</p>
+<p>信号达到后，进程视具体信号执行如下默认操作之一。</p>
+<ul>
+<li>忽略信号，也就是内核将信号丢弃，信号对进程不产生任何影响。</li>
+<li>终止（杀死）进程。</li>
+<li>产生 coredump 文件，同时进程终止。</li>
+<li>暂停（Stop）进程的执行。</li>
+<li>恢复进程执行。</li>
+</ul>
+<p>当然，对于有些信号，程序是可以改变默认行为的，这也就是 <code>os/signal</code> 包的用途。</p>
+<p>兼容性问题：信号的概念来自于 Unix-like 系统。Windows 下只支持 os.SIGINT 信号。</p>
+<h2 id="进程间的通信方式：共享内存"><a href="#进程间的通信方式：共享内存" class="headerlink" title="进程间的通信方式：共享内存"></a>进程间的通信方式：共享内存</h2><p>共享内存指 (shared memory)在多处理器的计算机系统中，可以被不同中央处理器（CPU）访问的大容量内存。由于多个CPU需要快速访问存储器，这样就要对存储器进行缓存（Cache）。任何一个缓存的数据被更新后，由于其他处理器也可能要存取，共享内存就需要立即更新，否则不同的处理器可能用到不同的数据。共享内存是 Unix下的多进程之间的通信方法 ,这种方法通常用于一个程序的多进程间通信，实际上多个程序间也可以通过共享内存来传递信息。</p>
+<h3 id="共享内存概述"><a href="#共享内存概述" class="headerlink" title="共享内存概述"></a>共享内存概述</h3><p>共享内存是进程间通信中最简单的方式之一。共享内存允许两个或更多进程访问同一块内存，就如同 malloc() 函数向不同进程返回了指向同一个物理内存区域的指针。当一个进程改变了这块地址中的内容的时候，其它进程都会察觉到这个更改。</p>
+<p><img src="%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/v2-195b0cf5f101ed8c11910fea9b77559e_720w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>上图描述的内容一样，共享内存实际上就是进程通过调用shmget（Shared Memory GET 获取共享内存）来分配一个共享内存块，然后每个进程通过shmat（Shared Memory Attach 绑定到共享内存块），将进程的逻辑虚拟地址空间指向共享内存块中。 随后需要访问这个共享内存块的进程都必须将这个共享内存绑定到自己的地址空间中去。当一个进程往一个共享内存快中写入了数据，共享这个内存区域的所有进程就可用都看到其中的内容。</p>
+<p><strong>共享内存的特点：</strong></p>
+<ol>
+<li>共享内存是进程间共享数据的一种最快的方法。一个进程向共享的内存区域写入了数据，共享这个内存区域的所有进程就可以立刻看到其中的内容。</li>
+<li>使用共享内存要注意的是多个进程之间对一个给定存储区访问的互斥。若一个进程正在向共享内存区写数据，则在它做完这一步操作前，别的进程不应当去读、写这些数据。</li>
+</ol>
+<h3 id="共享内存的通信"><a href="#共享内存的通信" class="headerlink" title="共享内存的通信"></a><strong>共享内存的通信</strong></h3><p>因为所有进程共享同一块内存，共享内存在各种进程间通信方式中具有最高的效率。访问共享内存区域和访问进程独有的内存区域一样快，并不需要通过系统调用或者其它需要切入内核的过程来完成。同时它也避免了对数据的各种不必要的复制。<br>因为系统内核没有对访问共享内存进行同步，您必须提供自己的同步措施。例如，在数据被写入之前不允许进程从共享内存中读取信息、不允许两个进程同时向同一个共享内存地址写入数据等。解决这些问题的常用方法是通过使用信号量进行同步。</p>
+<h3 id="共享内存的内存模型"><a href="#共享内存的内存模型" class="headerlink" title="共享内存的内存模型"></a><strong>共享内存的内存模型</strong></h3><p>要使用一块共享内存，进程必须首先分配它。随后需要访问这个共享内存块的每一个进程都必须将这个共享内存绑定到自己的地址空间中。当完成通信之后，所有进程都将脱离共享内存，并且由一个进程释放该共享内存块。理解 Linux 系统内存模型可以有助于解释这个绑定的过程。在 Linux 系统中，每个进程的虚拟内存是被分为许多页面的。这些内存页面中包含了实际的数据。每个进程都会维护一个从内存地址到虚拟内存页面之间的映射关系。尽管每个进程都有自己的内存地址，不同的进程可以同时将同一个内存页面映射到自己的地址空间中，从而达到共享内存的目的。<br>分配一个新的共享内存块会创建新的内存页面。因为所有进程都希望共享对同一块内存的访问，只应由一个进程创建一块新的共享内存。再次分配一块已经存在的内存块不会创建新的页面，而只是会返回一个标识该内存块的标识符。一个进程如需使用这个共享内存块，则首先需要将它绑定到自己的地址空间中。这样会创建一个从进程本身虚拟地址到共享页面的映射关系。当对共享内存的使用结束之后，这个映射关系将被删除。当再也没有进程需要使用这个共享内存块的时候，必须有一个（且只能是一个）进程负责释放这个被共享的内存页面。</p>
+<h3 id="进程间通信和线程间通信的几种方式"><a href="#进程间通信和线程间通信的几种方式" class="headerlink" title="进程间通信和线程间通信的几种方式"></a>进程间通信和线程间通信的几种方式</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/fanguangdexiaoyuer/p/10834737.html">参考</a></p>
+<h2 id="exit和exit的区别"><a href="#exit和exit的区别" class="headerlink" title="_exit和exit的区别"></a>_exit和exit的区别</h2><p>转载：<a target="_blank" rel="noopener" href="https://blog.csdn.net/goodlixueyong/article/details/6011021">点这里</a>和<a target="_blank" rel="noopener" href="https://www.cnblogs.com/mickole/p/3186606.html">这里</a></p>
+<h2 id="fork与vfork理解"><a href="#fork与vfork理解" class="headerlink" title="fork与vfork理解"></a>fork与vfork理解</h2><table>
+<thead>
+<tr>
+<th>系统调用</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>fork</td>
+<td>fork创造的子进程是父进程的完整副本，复制了父亲进程的资源，包括内存的内容task_struct内容</td>
+</tr>
+<tr>
+<td>vfork</td>
+<td>vfork创建的子进程与父进程共享数据段,而且由vfork()创建的子进程将先于父进程运行</td>
+</tr>
+<tr>
+<td>clone</td>
+<td>Linux上创建线程一般使用的是pthread库 实际上linux也给我们提供了创建线程的系统调用，就是clone</td>
+</tr>
+</tbody></table>
+<h3 id="再理解"><a href="#再理解" class="headerlink" title="再理解"></a>再理解</h3><p>为什么会有vfork，因为以前的fork 很傻， 它创建一个子进程时，将会创建一个新的地址空间，并且拷贝父进程的资源，而往往在子进程中会执行exec 调用，这样，前面的拷贝工作就是白费力气了，这种情况下，聪明的人就想出了vfork，它产生的子进程刚开始暂时与父进程共享地址空间（其实就是线程的概念了），因为这时候子进程在父进程的地址空间中运行，所以子进程不能进行写操作，并且在儿子 霸占”着老子的房子时候，要委屈老子一下了，让他在外面歇着（阻塞），一旦儿子执行了exec 或者exit 后，相 于儿子买了自己的房子了，这时候就相于分家了。</p>
+<h3 id="再再理解"><a href="#再再理解" class="headerlink" title="再再理解"></a>再再理解</h3><p>fork和vfork的区别：</p>
+<ol>
+<li><p>fork( )的子进程拷贝父进程的数据段和代码段；vfork( )的子进程与父进程共享数据段</p>
+</li>
+<li><p>fork( )的父子进程的执行次序不确定；vfork( )保证子进程先运行，在调用exec或exit之前与父进程数据是共享的，在它调用exec或exit之后父进程才可能被调度运行。</p>
+</li>
+<li><p>vfork( )保证子进程先运行，在它调用exec或exit之后父进程才可能被调度运行。如果在调用这两个函数之前子进程依赖于父进程的进一步动作，则会导致死锁。</p>
+</li>
+<li><p>写时复制,当需要改变共享数据段中变量的值，则拷贝父进程。</p>
+</li>
+</ol>
+<h3 id="再再再理解"><a href="#再再再理解" class="headerlink" title="再再再理解"></a>再再再理解</h3><p><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/7965.html">一个fork的面试题</a></p>
+<h2 id="操作系统中的页表寻址"><a href="#操作系统中的页表寻址" class="headerlink" title="操作系统中的页表寻址"></a>操作系统中的页表寻址</h2><p>页式内存管理，<strong>内存分成固定长度的一个个页片</strong>。<strong>操作系统为每一个进程维护了一个从虚拟地址到物理地址的映射关系的数据结构，叫页表</strong>，<strong>页表的内容就是该进程的虚拟地址到物理地址的一个映射</strong>。<strong>页表中的每一项都记录了这个页的基地址。通过页表，由逻辑地址的高位部分先找到逻辑地址对应的页基地址，再由页基地址偏移一定长度就得到最后的物理地址，偏移的长度由逻辑地址的低位部分决定</strong>。一般情况下，这个过程都可以由硬件完成，所以效率还是比较高的。页式内存管理的优点就是比较灵活，内存管理以较小的页为单位，方便内存换入换出和扩充地址空间。</p>
+<p>Linux最初的两级页表机制：</p>
+<p>两级分页机制将32位的虚拟空间分成三段，低十二位表示页内偏移，高20分成两段分别表示两级页表的偏移。</p>
+<ul>
+<li>PGD(Page Global Directory): 最高10位，全局页目录表索引</li>
+<li>PTE(Page Table Entry)：中间10位，页表入口索引</li>
+</ul>
+<p>当在进行地址转换时，结合在CR3寄存器中存放的页目录(page directory, PGD)的这一页的物理地址，再加上从虚拟地址中抽出高10位叫做页目录表项(内核也称这为pgd)的部分作为偏移, 即定位到可以描述该地址的pgd；从该pgd中可以获取可以描述该地址的页表的物理地址，再加上从虚拟地址中抽取中间10位作为偏移, 即定位到可以描述该地址的pte；在这个pte中即可获取该地址对应的页的物理地址, 加上从虚拟地址中抽取的最后12位，即形成该页的页内偏移, 即可最终完成从虚拟地址到物理地址的转换。从上述过程中，可以看出，对虚拟地址的分级解析过程，实际上就是不断深入页表层次，逐渐定位到最终地址的过程，所以这一过程被叫做page talbe walk。</p>
+<p>Linux的三级页表机制：</p>
+<p>当X86引入物理地址扩展(Pisycal Addrress Extension, PAE)后，可以支持大于4G的物理内存(36位），但虚拟地址依然是32位，原先的页表项不适用，它实际多4 bytes被扩充到8 bytes，这意味着，<strong>每一页现在能存放的pte数目从1024变成512了</strong>(4k/8)。相应地，页表层级发生了变化，Linus新增加了一个层级，叫做页中间目录(page middle directory, PMD), 变成：</p>
+<p>字段 描述 位数</p>
+<p>cr3 指向一个PDPT crs寄存器存储</p>
+<p>PGD 指向PDPT中4个项中的一个 位31~30</p>
+<p>PMD 指向页目录中512项中的一个 位29~21</p>
+<p>PTE 指向页表中512项中的一个 位20~12</p>
+<p>page offset 4KB页中的偏移 位11~0</p>
+<p>现在就同时存在2级页表和3级页表，在代码管理上肯定不方便。巧妙的是，Linux采取了一种抽象方法：所有架构全部使用3级页表: 即PGD -&gt; PMD -&gt; PTE。那只使用2级页表(如非PAE的X86)怎么办？</p>
+<p>办法是针对使用2级页表的架构，把PMD抽象掉，即虚设一个PMD表项。这样在page table walk过程中，PGD本直接指向PTE的，现在不了，指向一个虚拟的PMD，然后再由PMD指向PTE。这种抽象保持了代码结构的统一。</p>
+<p>Linux的四级页表机制：</p>
+<p>硬件在发展，3级页表很快又捉襟见肘了，原因是64位CPU出现了, 比如X86_64， 它的硬件是实实在在支持4级页表的。它支持48位的虚拟地址空间1。如下：</p>
+<p>字段 描述 位数</p>
+<p>PML4 指向一个PDPT 位47~39</p>
+<p>PGD 指向PDPT中4个项中的一个 位38~30</p>
+<p>PMD 指向页目录中512项中的一个 位29~21</p>
+<p>PTE 指向页表中512项中的一个 位20~12</p>
+<p>page offset 4KB页中的偏移 位11~0</p>
+<p>Linux内核针为使用原来的3级列表(PGD-&gt;PMD-&gt;PTE)，做了折衷。即采用一个唯一的，共享的顶级层次，叫PML4。这个PML4没有编码在地址中，这样就能套用原来的3级列表方案了。不过代价就是，由于只有唯一的PML4, 寻址空间被局限在(239=)512G, 而本来PML4段有9位, 可以支持512个PML4表项的。现在为了使用3级列表方案，只能限制使用一个， 512G的空间很快就又不够用了，解决方案呼之欲出。</p>
+<p>在2004年10月，当时的X86_64架构代码的维护者Andi Kleen提交了一个叫做4level page tables for Linux的PATCH系列，为Linux内核带来了4级页表的支持。在他的解决方案中，不出意料地，按照X86_64规范，新增了一个PML4的层级, 在这种解决方案中，X86_64拥一个有512条目的PML4, 512条目的PGD, 512条目的PMD, 512条目的PTE。对于仍使用3级目录的架构来说，它们依然拥有一个虚拟的PML4,相关的代码会在编译时被优化掉。 这样，就把Linux内核的3级列表扩充为4级列表。这系列PATCH工作得不错，不久被纳入Andrew Morton的-mm树接受测试。不出意外的话，它将在v2.6.11版本中释出。但是，另一个知名开发者Nick Piggin提出了一些看法，他认为Andi的Patch很不错，不过他认为最好还是把PGD作为第一级目录，把新增加的层次放在中间，并给出了他自己的Patch:alternate 4-level page tables patches。Andi更想保持自己的PATCH, 他认为Nick不过是玩了改名的游戏，而且他的PATCH经过测试很稳定，快被合并到主线了，不宜再折腾。不过Linus却表达了对Nick Piggin的支持，理由是Nick的做法conceptually least intrusive。毕竟作为Linux的扛把子，稳定对于Linus来说意义重大。最终，不意外地，最后Nick Piggin的PATCH在v2.6.11版本中被合并入主线。在这种方案中，4级页表分别是：PGD -&gt; PUD -&gt; PMD -&gt; PTE。</p>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bb5f2124be17">五级页表</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/CreateMyself/p/13167467.html">虚拟内存页表</a></li>
+</ul>
+<h2 id="线程同步-条件变量"><a href="#线程同步-条件变量" class="headerlink" title="线程同步-条件变量"></a>线程同步-条件变量</h2><p>与互斥锁不同，<strong>条件变量是用来等待而不是用来上锁的。条件变量用来自动阻塞一个线程，直到某特殊情况发生为止</strong>。<strong>通常条件变量和互斥锁同时使用。</strong></p>
+<p>条件变量使我们可以睡眠等待某种条件出现。条件变量是利用线程间共享的全局变量进行同步的一种机制，主要包括两个动作：一个线程等待”条件变量的条件成立”而挂起；另一个线程使”条件成立”（给出条件成立信号）。</p>
+<p>条件的检测是在互斥锁的保护下进行的。如果一个条件为假，一个线程自动阻塞，并释放等待状态改变的互斥锁。如果另一个线程改变了条件，它发信号给关联的条件变量，唤醒一个或多个等待它的线程，重新获得互斥锁，重新评价条件。如果两进程共享可读写的内存，条件变量可以被用来实现这两进程间的线程同步。</p>
+<h4 id="条件变量与互斥锁、信号量的区别"><a href="#条件变量与互斥锁、信号量的区别" class="headerlink" title="条件变量与互斥锁、信号量的区别"></a><strong>条件变量与互斥锁、信号量的区别</strong></h4><p>​    1.互斥锁必须总是由给它上锁的线程解锁，信号量的挂出即不必由执行过它的等待操作的同一进程执行。一个线程可以等待某个给定信号灯，而另一个线程可以挂出该信号灯。</p>
+<p>​    2.互斥锁要么锁住，要么被解开（二值状态，类型二值信号量）。</p>
+<p>​    3.由于信号量有一个与之关联的状态（它的计数值），信号量挂出操作总是被记住。然而当向一个条件变量发送信号时，如果没有线程等待在该条件变量上，那么该信号将丢失。</p>
+<p>​    4.互斥锁是为了上锁而设计的，条件变量是为了等待而设计的，信号灯即可用于上锁，也可用于等待，因而可能导致更多的开销和更高的复杂性。</p>
+<p>参考:<a target="_blank" rel="noopener" href="https://punmy.cn/2018/06/07/%E6%9D%A1%E4%BB%B6%E5%8F%98%E9%87%8F%EF%BC%88Condition%20Variables%EF%BC%89.html">点俺，俺很棒</a></p>
+<h2 id="进程与线程的区别"><a href="#进程与线程的区别" class="headerlink" title="进程与线程的区别"></a>进程与线程的区别</h2><p>1）进程是cpu资源分配的最小单位，线程是cpu调度的最小单位。</p>
+<p>2）进程有独立的系统资源，而同一进程内的线程共享进程的大部分系统资源,包括堆、代码段、数据段，每个线程只拥有一些在运行中必不可少的私有属性，比如tcb,线程Id,栈、寄存器。</p>
+<p>3）一个进程崩溃，不会对其他进程产生影响；而一个线程崩溃，会让同一进程内的其他线程也死掉。</p>
+<p>4）进程在创建、切换和销毁时开销比较大，而线程比较小。进程创建的时候需要分配系统资源，而销毁的的时候需要释放系统资源。进程切换需要分两步：切换页目录、刷新TLB以使用新的地址空间；切换内核栈和硬件上下文（寄存器）；而同一进程的线程间逻辑地址空间是一样的，不需要切换页目录、刷新TLB。</p>
+<p>5）进程间通信比较复杂，而同一进程的线程由于共享代码段和数据段，所以通信比较容易。</p>
+<h2 id="Linux的4种锁机制"><a href="#Linux的4种锁机制" class="headerlink" title="Linux的4种锁机制"></a>Linux的4种锁机制</h2><h3 id="互斥锁："><a href="#互斥锁：" class="headerlink" title="互斥锁："></a>互斥锁：</h3><p>mutex，用于保证在任何时刻，都只能有一个线程访问该对象。当获取锁操作失败时，线程会进入睡眠，等待锁释放时被唤醒</p>
+<h3 id="读写锁："><a href="#读写锁：" class="headerlink" title="读写锁："></a>读写锁：</h3><p>rwlock，分为读锁和写锁。处于读操作时，可以允许多个线程同时获得读操作。但是同一时刻只能有一个线程可以获得写锁。其它获取写锁失败的线程都会进入睡眠状态，直到写锁释放时被唤醒。 注意：写锁会阻塞其它读写锁。当有一个线程获得写锁在写时，读锁也不能被其它线程获取；写者优先于读者（一旦有写者，则后续读者必须等待，唤醒时优先考虑写者）。适用于读取数据的频率远远大于写数据的频率的场合。</p>
+<h3 id="自旋锁："><a href="#自旋锁：" class="headerlink" title="自旋锁："></a>自旋锁：</h3><p>spinlock，在任何时刻同样只能有一个线程访问对象。但是当获取锁操作失败时，不会进入睡眠，而是会在原地自旋，直到锁被释放。这样节省了线程从睡眠状态到被唤醒期间的消耗，在加锁时间短暂的环境下会极大的提高效率。但如果加锁时间过长，则会非常浪费CPU资源。</p>
+<h3 id="再分析"><a href="#再分析" class="headerlink" title="再分析"></a>再分析</h3><p><strong>spin_lock用于阻止在不同CPU上的执行单元对共享资源的同时访问以及不同进程上下文互相抢占导致的对共享资源的非同步访问，而中断失效和软中断失效却是为了阻止在同一CPU上软中断或中断对共享资源的非同步访问。</strong></p>
+<h3 id="自旋锁使用及注意事项"><a href="#自旋锁使用及注意事项" class="headerlink" title="自旋锁使用及注意事项"></a>自旋锁使用及注意事项</h3><p>自旋锁的注意事项：</p>
+<ol>
+<li><p>自旋锁使CPU处于忙等状态，因此临界区执行时间应该尽量短；</p>
+</li>
+<li><p>自旋锁是不可重入的；</p>
+</li>
+<li><p>自旋锁保护的临界区不应该有睡眠操作：</p>
+<p>1）对于开中断的自旋锁来说，睡眠操作可能发生如下两种情况：<br> a. 死锁：任务A获得自旋锁之后睡眠，接着又发生了中断，而中断处理程序内部又打算获取同一个自旋锁，则此时会发生自死锁 —— 自旋锁是不可重入的。<br> b. CPU浪费：倘若中断处理程序内部没有获取同一个自旋锁的操作，则理论上可以产生调度。假设进程B打算获取CPU的控制权，但由于此时是关抢占的（因为进程A还没有解自旋锁，此时依旧处于自旋锁的临界区中），导致进程B无法运行。也就是说CPU将无法运行任何程序，一直处于无事可做的状态，造成CPU的浪费。</p>
+<p>2）对于顺带关中断的自旋锁来说，显而易见在临界区内使不能睡眠的，因为唤醒一个睡眠的进程依赖于调度器，而调度器是通过时钟中断来判断合适唤醒进程的，倘若在关闭中断的时候进程睡眠，则调度器将再也无法收到时钟中断（因为开中断的操作也是由该进程控制的），从而永远都无法唤醒睡眠的进程。也就是说该进程将处于睡死状态。</p>
+</li>
+</ol>
+<p>简单来说，自旋锁的初衷就是：在短期间内进行轻量级的锁定。一个被争用的自旋锁使得请求它的线程在等待锁重新可用的期间进行自旋(特别浪费处理器时间)，所以自旋锁不应该被持有时间过长。如果需要长时间锁定的话, 最好使用信号量。</p>
+<h3 id="RCU："><a href="#RCU：" class="headerlink" title="RCU："></a>RCU：</h3><p>即read-copy-update，在修改数据时，首先需要读取数据，然后生成一个副本，对副本进行修改。修改完成后，再将老数据update成新的数据。使用RCU时，读者几乎不需要同步开销，既不需要获得锁，也不使用原子指令，不会导致锁竞争，因此就不用考虑死锁问题了。而对于写者的同步开销较大，它需要复制被修改的数据，还必须使用锁机制同步并行其它写者的修改操作。在有大量读操作，少量写操作的情况下效率非常高。</p>
+<h3 id="信号量-互斥体和自旋锁的区别"><a href="#信号量-互斥体和自旋锁的区别" class="headerlink" title="信号量/互斥体和自旋锁的区别"></a>信号量/互斥体和自旋锁的区别</h3><p>信号量/互斥体允许进程睡眠属于睡眠锁，自旋锁则不允许调用者睡眠，而是让其循环等待，所以有以下区别应用 :</p>
+<ol>
+<li>信号量和读写信号量适合于保持时间较长的情况，它们会导致调用者睡眠，因而自旋锁适合于保持时间非常短的情况</li>
+<li>自旋锁可以用于中断，不能用于进程上下文(会引起死锁)。而信号量不允许使用在中断中，而可以用于进程上下文</li>
+<li>自旋锁保持期间是抢占失效的，自旋锁被持有时，内核不能被抢占，而信号量和读写信号量保持期间是可以被抢占的</li>
+</ol>
+<p>另外需要注意的是:</p>
+<ol>
+<li>信号量锁保护的临界区可包含可能引起阻塞的代码，而自旋锁则绝对要避免用来保护包含这样代码的临界区，因为阻塞意味着要进行进程的切换，如果进程被切换出去后，另一进程企图获取本自旋锁，死锁就会发生。</li>
+<li>在你占用信号量的同时不能占用自旋锁，因为在你等待信号量时可能会睡眠，而在持有自旋锁时是不允许睡眠的。</li>
+</ol>
+<h3 id="信号量和互斥体之间的区别"><a href="#信号量和互斥体之间的区别" class="headerlink" title="信号量和互斥体之间的区别"></a>信号量和互斥体之间的区别</h3><p>概念上的区别：<br> 信号量：是进程间（线程间）同步用的，一个进程（线程）完成了某一个动作就通过信号量告诉别的进程（线程），别的进程（线程）再进行某些动作。有二值和多值信号量之分。<br> 互斥锁：是线程间互斥用的，一个线程占用了某一个共享资源，那么别的线程就无法访问，直到这个线程离开，其他的线程才开始可以使用这个共享资源。可以把互斥锁看成二值信号量。</p>
+<p>上锁时：<br> 信号量: 只要信号量的value大于0，其他线程就可以sem_wait成功，成功后信号量的value减一。若value值不大于0，则sem_wait阻塞，直到sem_post释放后value值加一。<br> 互斥锁: 只要被锁住，其他任何线程都不可以访问被保护的资源。如果没有锁，获得资源成功，否则进行阻塞等待资源可用。<br> 使用场所：         信号量主要适用于进程间通信，当然，也可用于线程间通信。而互斥锁只能用于线程间通信。</p>
+<p>参考:</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/88241719">Linux中的各种锁及其基本原理</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/5725db8f07dc">深入理解各种锁</a></p>
+<h2 id="软链接和硬链接区别"><a href="#软链接和硬链接区别" class="headerlink" title="软链接和硬链接区别"></a>软链接和硬链接区别</h2><p>到这里我们其实可以总结一下了：</p>
+<ul>
+<li>硬链接： 与普通文件没什么不同，<code>inode</code> 都指向同一个文件在硬盘中的区块</li>
+<li>软链接： 保存了其代表的文件的绝对路径，是另外一种文件，在硬盘上有独立的区块，访问时替换自身路径。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/dde6a01c4094">参考</a></p>
+<h2 id="静态变量初始化"><a href="#静态变量初始化" class="headerlink" title="静态变量初始化"></a>静态变量初始化</h2><p>静态变量的内存分配和初始化</p>
+<p>对于C语言的全局和静态变量，不管是否被初始化，其内存空间都是全局的；如果初始化，那么初始化发生在任何代码执行之前，属于编译期初始化。由于内置变量无须资源释放操作，仅需要回收内存空间，因此程序结束后全局内存空间被一起回收，不存在变量依赖问题，没有任何代码会再被执行！</p>
+<p>C++引入了对象，这给全局变量的管理带领新的麻烦。C++的对象必须有构造函数生成，并最终执行析构操作。由于构造和析构并非分配内存那么简单，可以说相当复杂，因此何时执行全局或静态对象（C++）的构造和析构呢？这需要执行相关代码，无法在编译期完成，因此C++标准规定：全局或静态对象当且仅当对象首次用到时才进行构造，并通过atexit()来管理对象的生命期，在程序结束之后（如调用exit，main），按FILO顺序调用相应的析构操作！</p>
+<p>总结：</p>
+<blockquote>
+<p>全局变量、文件域的静态变量和类的静态成员变量在main执行之前的静态初始化过程中分配内存并初始化；局部静态变量（一般为函数内的静态变量）在第一次使用时分配内存并初始化。这里的变量包含内置数据类型和自定义类型的对象。</p>
+</blockquote>
+<p>静态变量初始化的线程安全性说明</p>
+<blockquote>
+<p>非局部静态变量一般在main执行之前的静态初始化过程中分配内存并初始化，可以认为是线程安全的；</p>
+<p>局部静态变量在编译时，编译器的实现一般是在初始化语句之前设置一个局部静态变量的标识来判断是否已经初始化，运行的时候每次进行判断，如果需要初始化则执行初始化操作，否则不执行。这个过程本身不是线程安全的。</p>
+</blockquote>
+<p>参考:<a target="_blank" rel="noopener" href="https://blog.csdn.net/u011723812/article/details/78151533">静态变量初始化的时机</a></p>
+<h2 id="用户态和内核态的区别"><a href="#用户态和内核态的区别" class="headerlink" title="用户态和内核态的区别"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/gizing/p/10925286.html">用户态和内核态的区别</a></h2><p>用户态和内核态是操作系统的两种运行级别，两者最大的区别就是特权级不同。用户态拥有最低的特权级，内核态拥有较高的特权级。运行在用户态的程序不能直接访问操作系统内核数据结构和程序。内核态和用户态之间的转换方式主要包括：系统调用，异常和中断。</p>
+<h2 id="事件驱动"><a href="#事件驱动" class="headerlink" title="事件驱动"></a>事件驱动</h2><blockquote>
+<p><strong>个人理解：</strong>事件驱动(even-driven)，字面理解即：由事件去触发某个或者一系列动作。</p>
+<p><strong>百度百科：</strong> 从事件角度说，事件驱动程序的基本结构是由一个事件收集器、一个事件发送器和一个事件处理器组成。 事件收集器专门负责收集所有事件，包括来自用户的（如鼠标、键盘事件等）、来自硬件的（如时钟事件等）和来自软件的（如操作系统、应用程序本身等）。 事件发送器负责将收集器收集到的事件分发到目标对象中。 事件处理器做具体的事件响应工作。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">举个栗子：起床闹钟响了驱动我们该起床了，上课铃声响了驱动我们进教室上课、放学铃声响了驱动我们上课结束了可以爱干嘛干嘛去了。<br></code></pre></td></tr></table></figure>
+<p>或许这个栗子符合你，但是对我来说根本不可能🙈，闹钟响了压根不会起床、不起床听不到上课铃、不去上课也听不到下课铃，GG</p>
+<p>转入正题，事件驱动的应用无处不在比如：spring、netty、zookeeper、mq，而且事件【event】和监听器【listener】都是成对存在的，单个存在是没有意义的，下面手动实现一个事件驱动模型。</p>
+<p>那么事件驱动模型的组成是怎样的呢？</p>
+<h2 id="事件驱动模型"><a href="#事件驱动模型" class="headerlink" title="事件驱动模型"></a>事件驱动模型</h2><p>先去百度了一张模型图，当当当当~</p>
+<p><img src="%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/1649c0eb09b11679" srcset="/img/loading.gif" alt="img"></p>
+<p>说实话，图不是自己画的就是不满意，但是 <code>MAC</code> 上画图工具都找不到好用的，就懒得画了，把<strong>事件收集器</strong>  ==&gt; **事件中心 **，事件和监听器的关系可以是<code>1:1、1:N、N:M</code>，取决于自己的需求。</p>
+<p>说下流程：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 系统启动，监听器把自己注册到事件中心，与某种事件进行绑定<br><span class="hljs-bullet">2.</span> 事件发送器发送事件到事件中心，事件中心去查找与处理该事件的监听器<br>复制代码<br></code></pre></td></tr></table></figure>
+<p>过程非常简单，为什么要用事件驱动呢？刚好百度百科有个栗子，看完相信优秀的你就明白了：</p>
+<blockquote>
+<p>通常，我们写服务器处理模型的程序时，有以下几种模型：</p>
+<p>（1）每收到一个请求，创建一个新的进程，来处理该请求；</p>
+<p>（2）每收到一个请求，创建一个新的线程，来处理该请求；</p>
+<p>（3）每收到一个请求，放入一个事件列表，让主进程通过非阻塞I/O方式来处理请求</p>
+<p>上面的几种方式，各有千秋，</p>
+<p>第（1）种方法，由于创建新的进程的开销比较大，所以，会导致服务器性能比较差,但实现比较简单。</p>
+<p>第（2）种方式，由于要涉及到线程的同步，有可能会面临死锁等问题。</p>
+<p>第（3）种方式，在写应用程序代码时，逻辑比前面两种都复杂。</p>
+<p>综合考虑各方面因素，一般普遍认为第（3）种方式是大多数网络服务器采用的方式</p>
+</blockquote>
+<p><em>实际上，事件驱动模型的核心就是</em>  <strong>线程池</strong> ！！！ 来实现异步非阻塞。</p>
+<p>转自：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903638377168909">传送门</a></p>
+<h2 id="IO多路复用"><a href="#IO多路复用" class="headerlink" title="IO多路复用"></a>IO多路复用</h2><p>多路复用包括：</p>
+<ul>
+<li>select：线性扫描所有监听的文件描述符，不管他们是不是活跃的。有最大数量限制（32位系统1024，64位系统2048）</li>
+<li>poll：同select，不过数据结构不同，需要分配一个pollfd结构数组，维护在内核中。它没有大小限制，不过需要很多复制操作</li>
+<li>epoll：用于代替poll和select，没有大小限制。使用一个文件描述符管理多个文件描述符，使用红黑树存储。同时用事件驱动代替了轮询。epoll_ctl中注册的文件描述符在事件触发的时候会通过回调机制激活该文件描述符。epoll_wait便会收到通知。最后，epoll还采用了mmap虚拟内存映射技术减少用户态和内核态数据传输的开销</li>
+</ul>
+<h2 id="五种IO模型介绍和对比"><a href="#五种IO模型介绍和对比" class="headerlink" title="五种IO模型介绍和对比"></a>五种IO模型介绍和对比</h2><p>blocking和non-blocking的区别在哪，synchronous IO和asynchronous IO的区别在哪。<br>先回答最简单的这个：blocking与non-blocking。前面的介绍中其实已经很明确的说明了这两者的区别。调用blocking IO会一直block住对应的进程直到操作完成，而non-blocking IO在kernel还在准备数据的情况下会立刻返回。<br>在说明synchronous IO和asynchronous IO的区别之前，需要先给出两者的定义。Stevens给出的定义（其实是POSIX的定义）是这样子的：<br>* A synchronous I/O operation causes the requesting process to be blocked until that I/O operation completes;<br>* An asynchronous I/O operation does not cause the requesting process to be blocked;<br>两者的区别就在于synchronous IO做”IO operation”的时候会将process阻塞。按照这个定义，之前所述的blocking IO，non-blocking IO，IO multiplexing都属于synchronous IO。有人可能会说，non-blocking IO并没有被block啊。这里有个非常“狡猾”的地方，定义中所指的”IO operation”是指真实的IO操作，就是例子中的recvfrom这个系统调用。<strong>non-blocking IO在执行recvfrom这个系统调用的时候，如果kernel的数据没有准备好，这时候不会block进程。但是当kernel中数据准备好的时候，recvfrom会将数据从kernel拷贝到用户内存中，这个时候进程是被block了，在这段时间内进程是被block的。</strong>而asynchronous IO则不一样，当进程发起IO操作之后，就直接返回再也不理睬了，直到kernel发送一个信号，告诉进程说IO完成。在这整个过程中，进程完全没有被block。</p>
+<p><strong>阻塞IO，非阻塞IO，IO复用，信号驱动IO，异步IO</strong>。前四种都属于同步IO。阻塞IO不必说了。非阻塞IO ，IO请求时加上O_NONBLOCK一类的标志位，立刻返回，IO没有就绪会返回错误，需要请求进程主动轮询不断发IO请求直到返回正确。IO复用同非阻塞IO本质一样，不过利用了新的select系统调用，由内核来负责本来是请求进程该做的轮询操作。看似比非阻塞IO还多了一个系统调用开销，不过因为可以支持多路IO，才算提高了效率。信号驱动IO，调用sigaltion系统调用，当内核中IO数据就绪时以SIGIO信号通知请求进程，请求进程再把数据从内核读入到用户空间，这一步是阻塞的。<br>异步IO，如定义所说，不会因为IO操作阻塞，IO操作全部完成才通知请求进程。<br>各个IO Model的比较如图所示：</p>
+<p><img src="%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/v2-3d67840eb606c5a2bd8490276634936e_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>经过上面的介绍，会发现non-blocking IO和asynchronous IO的区别还是很明显的。在non-blocking IO中，虽然进程大部分时间都不会被block，但是它仍然要求进程去主动的check，并且当数据准备完成以后，也需要进程主动的再次调用recvfrom来将数据拷贝到用户内存。而asynchronous IO则完全不同。它就像是用户进程将整个IO操作交给了他人（kernel）完成，然后他人做完后发信号通知。在此期间，用户进程不需要去检查IO操作的状态，也不需要主动的去拷贝数据。</p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903728718462990#heading-8">参考</a>:很详细</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/54580385">参考</a>:更详细</p>
+<h2 id="请问怎么实现线程池"><a href="#请问怎么实现线程池" class="headerlink" title="请问怎么实现线程池"></a>请问怎么实现线程池</h2><p>1.设置一个生产者消费者队列，作为临界资源<br>2.初始化n个线程，并让其运行起来，加锁去队列取任务运行<br>3.当任务队列为空的时候，所有线程阻塞<br>4.当生产者队列来了一个任务后，先对队列加锁，把任务挂在到队列上，然后使用条件变量去通知阻塞中的一个线程</p>
+
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
