@@ -228,7 +228,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：20 小时前
+                  本文最后更新于：几秒前
                 
               </p>
             
@@ -390,7 +390,7 @@
 <h3 id="Url类请求释义"><a href="#Url类请求释义" class="headerlink" title="Url类请求释义"></a>Url类请求释义</h3><p>对于Url类请求,客户端是不能通过body写出数据的，服务端拿到的body是空的。因此-般情况下,我们提供的HttpClient被Url类的请求getOutputStream(的时候会抛一个异常，而HttpServer接受到Url类的请求后getInputStream()的时候也会抛一个异常, 这都是为了告诉调用者这是不合理的。</p>
 <p>这里的HttpClient和HttpServer不是特指某框架或者浏览器， 而是个笼统的称呼。</p>
 <p>因此Url类的请求想要提交参数，就把参数跟在ur后边了，但是url-般是指向资源的，因此url后面跟的参数更多的是一种条件和要求(例如阿里云OSS处理图片时)。</p>
-<p><img src="/img/post.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><img src="20131219133501281" srcset="/img/loading.gif" alt="img"></p>
 <h3 id="Body类请求释义"><a href="#Body类请求释义" class="headerlink" title="Body类请求释义"></a>Body类请求释义</h3><p>Body类请求在语义和能力上来说应该是兼容Ur|类请求的，但是根据Http协议它们谁有谁该做的事。例如RESTful风格就是根据Http协议来提出的。</p>
 <p>对于Body类请求，客户端可以通过body写出数据，服务端可以通过body接受数据。因此Body类请求能上传到服务端的数据比Url类请求的大的多。</p>
 <p>Body类请求除了可以把参数放到url中,也可以通过body发送数据。</p>
