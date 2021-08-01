@@ -17,9 +17,23 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>归档 - 现实很近又很冷，梦想很远却很温暖</title>
+  <title>page.title - 现实很近又很冷，梦想很远却很温暖</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 
@@ -141,12 +155,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/photo3.jpg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="page.title">
               
             </span>
 
@@ -170,73 +184,25 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 9 篇文章</p>
-  <hr>
-  
-  
-    
-      
-      <p class="h5">2021</p>
-    
-    <a href="/2021/08/02/%E5%88%B7%E8%B5%B7%E6%9D%A5/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title"></span>
-      <time style="float: right;">08-02</time>
-    </a>
-  
-    
-    <a href="/2021/03/25/%E9%9D%A2%E7%BB%8Fshow/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">面经show</span>
-      <time style="float: right;">03-25</time>
-    </a>
-  
-    
-    <a href="/2021/03/24/C++%E5%9F%BA%E7%A1%80/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">C++基础</span>
-      <time style="float: right;">03-24</time>
-    </a>
-  
-    
-    <a href="/2021/03/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">操作系统</span>
-      <time style="float: right;">03-24</time>
-    </a>
-  
-    
-    <a href="/2021/03/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">计算机网络</span>
-      <time style="float: right;">03-24</time>
-    </a>
-  
-    
-    <a href="/2021/03/23/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">go并发编程</span>
-      <time style="float: right;">03-23</time>
-    </a>
-  
-    
-    <a href="/2021/03/22/LeetCode%E7%AC%AC224%E5%9C%BA%E5%91%A8%E8%B5%9B/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">LeetCode第224场周赛</span>
-      <time style="float: right;">03-22</time>
-    </a>
-  
-    
-    <a href="/2021/03/22/leetcode%E7%AC%AC%2044%20%E5%9C%BA%E5%8F%8C%E5%91%A8%E8%B5%9B/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">leetcode第44场双周赛</span>
-      <time style="float: right;">03-22</time>
-    </a>
-  
-    
-    <a href="/2021/03/22/%E5%89%91%E6%8C%87offer%E9%A2%98%E8%A7%A3/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">剑指offer题解</span>
-      <time style="float: right;">03-22</time>
-    </a>
-  
+<div class="page-content">
+  <h2 id="终端美化"><a href="#终端美化" class="headerlink" title="终端美化"></a>终端美化</h2><p><strong>安装git</strong></p>
+<p><code>sudo yum install git</code></p>
+<p><strong>安装zsh</strong></p>
+<p><code>sudo yum install zsh</code></p>
+<p><strong>切换普通用户 更换shell</strong></p>
+<p><code>chsh -s /bin/zsh</code></p>
+<p><strong>安装zsh主题oh my zsh</strong> </p>
+<p><code>wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</code></p>
+<p><strong>更改 ~/.zshrc</strong></p>
+<p>ZSH_THEME=”ys”</p>
+<h2 id="vim轻量高效插件管理器vim-plug"><a href="#vim轻量高效插件管理器vim-plug" class="headerlink" title="vim轻量高效插件管理器vim-plug"></a>vim轻量高效插件管理器vim-plug</h2><p><a target="_blank" rel="noopener" href="https://vimjc.com/vim-plug.html">https://vimjc.com/vim-plug.html</a></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight leaf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs leaf">call plug<span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">begin</span><span class="hljs-params">(&#x27;~/.<span class="hljs-variable">vim</span>/<span class="hljs-variable">plugged</span>&#x27;)</span></span><br>Plug xxx<br>call plug<span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">end</span><span class="hljs-params">()</span></span><br></code></pre></td></tr></table></figure>
+<h3 id="使用vim-plug安装vim插件"><a href="#使用vim-plug安装vim插件" class="headerlink" title="使用vim-plug安装vim插件"></a>使用vim-plug安装vim插件</h3><p>vim命令行模式下:PlugInstall</p>
+<h2 id="fzf插件"><a href="#fzf插件" class="headerlink" title="fzf插件"></a>fzf插件</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs 1c">Plug &#x27;junegunn/fzf&#x27;, &#123; &#x27;dir&#x27;: &#x27;~/.fzf&#x27;, &#x27;do&#x27;: &#x27;./install --all&#x27; &#125;,<br>Plug &#x27;junegunn/fzf.vim&#x27;,<br></code></pre></td></tr></table></figure>
+<p><code>yum install the_silver_searcher</code> 安装the_silver_searcher</p>
+
 </div>
-
-
-
-
 
               </div>
             </div>
@@ -325,6 +291,8 @@
 
 
 
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
